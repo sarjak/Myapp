@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.sarjak.myapp"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="17" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.sarjak.myapp.HomeActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- <activity -->
+        <!-- android:name="com.sarjak.myapp.MainActivity" -->
+        <!-- android:label="@string/app_name" > -->
+        <!-- <intent-filter> -->
+        <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+        <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+        <!-- </intent-filter> -->
+        <!-- </activity> -->
+        <!-- <activity -->
+        <!-- android:name="com.sarjak.myapp.LoginActivity" -->
+        <!-- android:label="@string/title_activity_login" -->
+        <!-- android:windowSoftInputMode="adjustResize|stateVisible" > -->
+        <!-- </activity> -->
+        <!-- <activity -->
+        <!-- android:name="com.sarjak.myapp.HomeActivity" -->
+        <!-- android:label="@string/app_name" > -->
+        <!-- </activity> -->
+        <activity
+            android:name="com.sarjak.myapp.EarringActivity"
+            android:label="@string/title_activity_earring" >
+        </activity>
+        <activity
+            android:name="com.sarjak.myapp.UploadActivity"
+            android:label="@string/title_activity_upload" >
+        </activity>
+        <activity
+            android:name="com.sarjak.myapp.UploadNewActivity"
+            android:label="@string/title_activity_upload_new" >
+        </activity>
+        <activity
+            android:name="com.sarjak.myapp.GalleryActivity"
+            android:label="@string/title_activity_gallery" >
+        </activity>
+    </application>
+
+</manifest>
